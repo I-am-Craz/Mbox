@@ -1,0 +1,7 @@
+mixin read-more(title)
+    div(class='d-flex mb-5')
+        span(class='border-left')
+        h3(class='small-title small-title_bordered hidden')=title
+mixin genre-block(link, varName)
+    div(class='genre-block hidden' style={background:varName})
+        img(src=link)

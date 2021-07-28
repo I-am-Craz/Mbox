@@ -1,0 +1,38 @@
+.header{
+  grid-area: header;
+  .centered;
+  align-items: center;
+  &-nav, &-icons{
+    .centered;
+  }
+  &-nav{
+    width: 40%;
+  }
+  &-icons{
+    cursor: pointer;
+    width: 15%;
+  }
+  @media screen and (max-width: 1200px){
+    .logo{
+      width: 100%;
+    }
+    &-nav, &-icons{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      justify-content: space-around;
+    }
+  }
+  @media screen and (max-width: 700px){
+    &-nav, &-icons{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1200px) and (min-width: 700px){
+    &-nav{
+      width: 50%;
+    }
+    &-icons{
+      width: 30%;
+    }
+  }
+}
