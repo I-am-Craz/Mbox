@@ -160,7 +160,7 @@
   transition: all 0.5s ease-in;
 }
 .genre-block:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
   box-shadow: rgba(255, 255, 255, 0.6) 0 2px 4px, rgba(255, 255, 255, 0.5) 0 7px 13px -3px, rgba(255, 255, 255, 0.4) 0 -3px 0 inset;
 }
 .novelty-img {
@@ -309,7 +309,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-a::after {
+a:not(.logo)::after {
   content: '';
   display: block;
   width: 0;
@@ -317,7 +317,7 @@ a::after {
   background: #ffffff;
   transition: width 0.3s;
 }
-a:hover::after {
+a:not(.logo):hover::after {
   width: 100%;
 }
 .d-flex {
@@ -329,7 +329,7 @@ a:hover::after {
   flex-wrap: wrap;
 }
 .logo {
-  padding: 1%;
+  padding: 2%;
   display: flex;
 }
 .btn {
@@ -402,7 +402,7 @@ footer {
   opacity: 0;
 }
 .active {
-  transform: translate3d(0px, 0, 0);
+  transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

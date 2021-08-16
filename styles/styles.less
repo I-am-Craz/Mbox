@@ -81,7 +81,7 @@ ul{
 a{
   text-decoration: none;
   cursor: pointer;
-  &::after{
+  &:not(.logo)::after{
     content: '';
     display: block;
     width: 0;
@@ -89,7 +89,7 @@ a{
     background: @white-color;
     transition: width .3s;
   }
-  &:hover::after {
+  &:not(.logo):hover::after {
     width: 100%;
   }
 }
@@ -103,7 +103,7 @@ a{
 }
 
 .logo{
-  padding: 1%;
+  padding: 2%;
   display: flex;
 }
 .btn{
@@ -171,6 +171,6 @@ section, header, footer{
   opacity: 0;
 }
 .active{
-  transform: translate3d(0px, 0, 0);
+  transform: translate3d(0, 0, 0);
   opacity: 1;
 }
